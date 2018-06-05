@@ -1,0 +1,12 @@
+<div class="task-page">
+    <h2><%= @task.title %></h2>
+
+        <div class="task">
+            <div class="completed">
+                <i class="<%= @task.completed ? "fas fa-check-square" : "far fa-square"   %>"></i>
+            </div>
+            <h3><%= @task.details %> </h3>
+            
+        </div>
+        <h4><%= link_to "GO back", tasks_path %> </h4>
+</div>

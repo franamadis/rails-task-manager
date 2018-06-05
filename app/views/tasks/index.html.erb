@@ -1,0 +1,36 @@
+<!-- app/views/restaurants/index.html.erb -->
+
+
+<div class="tasks">
+    <h1>TASKS</h1>
+    <% @tasks.each do |task| %>
+        <div class="task">
+            <div class="completed">
+                <i class="<%= task.completed ? "fas fa-check-square" : "far fa-square"   %>"></i>
+            </div>
+            <h4><%= link_to task.title, task_path(task) %> </h4>
+            <%= link_to edit_task_path(task) do%>
+            <div class="check-box">
+                <i class="fas fa-edit"></i>
+            <% end %>
+             <%= link_to task_path(task),
+                    method: :delete,
+                    data: { confirm: "Are you sure?" }  do%>
+                    <i class=" far fa-trash-alt"></i>
+            <% end %>
+            </div>
+        
+        </div>
+    <% end %>
+</div>
+<%= link_to new_task_path do%>
+  <div class="add-task">
+    <div class="row-add-task">
+         <i class="space-right fas    fa-plus-circle"></i>
+   
+            <p>Add new task</i>
+      </div>
+   
+
+  </div>
+<% end %>

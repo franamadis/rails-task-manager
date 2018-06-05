@@ -1,3 +1,75 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: whitesmoke;
+    margin: 10px;
+    width: 50%;
+    position: relative;
+
+}
+
+.completed {
+    margin: 15px;
+
+}
+
+.tasks {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.add-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+.check-box {
+    position: absolute;
+    right: 20px;
+}
+.row-add-task{
+    display: flex;
+background-color: lightblue;
+width: 50%;
+align-items: center;
+flex-direction: row;
+margin: 10px;
+padding: 15px;
+}
+
+.space-right {margin-right: 40px}
+
+.remove_reg {
+    position: absolute;
+    right: 10px;
+    
+}
+.my-container {
+    display: flex;
+    width: 100%;
+    background-color: whitesmoke;
+    justify-content: center;
+    padding: 100px;
+
+}
+
+
+.form-box {
+    width: 50%;
+    flex-direction: column;
+}
+
+
